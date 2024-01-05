@@ -1,5 +1,5 @@
 # Introduction
-Hello my name is Kyaw Nyi Nyi (knyi9181).
+Hello my name is Kyaw Nyi Nyi.
 
 Welcome to my ReadMe file, this website is an microsite about my city that I grew up in and what it offers to the people who would like to visit here someday. In this document, I'll be going through the iterative process from the previous assignment of website proposal, the changes and improvements that I made, challenges that I faced and the reason behind my design process as a whole while coding this site.
 
