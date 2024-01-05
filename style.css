@@ -1,0 +1,298 @@
+/* Kyaw Nyi Nyi unikey:knyi9181 DECO1016 WEBSITE PROTOTYPE SUBMISSION */
+
+/* FONTS IMPORTED HERE FOR THE WEBSITE */
+/* Marcellus SC fonts for the titles and heading text of the websites  */
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+/* Manjari for body paragraphs and texts across the content of the site */
+@import url('https://fonts.googleapis.com/css2?family=Manjari&family=Marcellus&family=Marcellus+SC&display=swap');
+
+
+/*Reset for css in case if the styling is not working */
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+} 
+
+/* HEADER SECTION OF THE WEBPAGE CONTENT THE STYLING WILL APPLY TO MOST OF THE HEADER IN ALL THE WEBPAGES BUT WITH DIFFERENT IMAGES AND TITLE FOR THE DESIGNATED WEBPAGE */
+
+/*Styling for header tag to set the right properties on the apperance*/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #161616;
+  font-family: 'Marcellus SC', serif;
+}
+
+/* styling for mandalay logo image within header on top of the navbar */
+.Mandalay_Logo > figure {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 0%;
+  padding: 5px ;
+}
+
+/* styling for narbar class within header */
+.navbar_below {
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* styling the padding of ul of the nav bar so that the nav bar content is align on the center of the webpage*/
+.navbar_below > nav > ul {
+  padding: 0%;
+}
+
+/* styling for li tag of navbar class within header */
+.navbar_below > nav > ul > li {
+  display: inline-block;
+  flex: 1;
+  text-align: center;
+  font-size: clamp(10px,4vw,25px); /*Used clamp instead of media queries for the font size because it is used to solve the problem of needing multiple media queries by having min and max value.*/
+  padding: 0% 10px;
+}
+
+/* styling for navigation links of navbar class within header */
+.navbar_below > nav > ul > li > a {
+  color: #E7AE54;
+  text-decoration: none;
+}
+
+/* Pseudo-element for showing the underline on the navigation link of navbar class within header tag. */
+.navbar_below > nav > ul > li > a::after {
+  content:""; /*declaring content so psuedo element could be applied with css rules*/
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin: auto;
+  background: #E7AE54;
+  transition: 0.5s; /* transition for smooth animation when it is hovered later*/
+}
+
+/*The underline will expand once the mousse is hover over the nav link buttons */
+.navbar_below > nav > ul > li > a:hover::after {
+  width: 100%;
+}
+
+/* Styling for the position current page title section of the header part */
+.currentpage_title {
+  position: relative;
+  min-height: 300px;
+  width: 100%;
+}
+
+/* Styling for title text in the current page title section of the header part*/
+.currentpage_title > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Marcellus SC', serif;
+  font-size: clamp(24px, 8vw, 76px); /*Used clamp instead of media queries for the font size because it is used to solve the problem of needing multiple media queries by having min and max value.*/
+  color: #ffffff; 
+}
+
+/*Styling for the figure that the image will be place later, so that the image will fit onto the full width of the section  */
+.currentpage_title > figure {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the image in the class current page title section so the image fits in properly into the width of the content*/
+.currentpage_title > figure img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/*THE MAIN BODY OF THE CONTENT*/
+
+/*Styling for the main section mostly for the background without the content*/
+main{
+  background-color: #edeeed;
+}
+
+/*Styling for the article section mostly for the background of the content that will be visible */
+article {
+  width: 80%;
+  margin: auto;
+  background-color: #FAF9F6;
+}
+
+/* Styling for the introductory paragraph section, this styling and class will be reused across multiple webpages */
+.intro_paragraph{
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 30px;
+  font-size: clamp(10px, 2vw, 16px); /*Used clamp instead of media queries for the font size because it is used to solve the problem of needing multiple media queries by having min and max value.*/
+  font-family: 'Manjari', sans-serif;
+}
+
+/* styling for the .homepage_section by adding some padding  */
+.homepage_section {
+  padding-bottom: 30px;
+}
+
+/* Styling for the title class and font in on top of the content box, this class will be reused in multiple pages  */
+.title {
+  text-align: start;
+  padding-top: 20px;
+  margin: 0 0 0 40px;
+  font-size: clamp(14px, 4vw, 24px); /*Used clamp instead of media queries for the font size because it is used to solve the problem of needing multiple media queries by having min and max value.*/
+  font-family: 'Marcellus SC', serif;
+}
+
+/* styling for the figure inside the destination content of the section */
+.homepage_section > figure {
+  position: relative;
+  overflow: hidden; /* Styling the figure to hide any content that would overflow the figure container*/
+  border-radius: 20px; /* Rounding off the corners of the content of the figure and image*/
+}
+
+/* Styling for the position and the font size and style of the text overlay over the image in the destination content of the section  */
+.homepage_section > figure > a > .text_overlay {
+  position: absolute;
+  margin: 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: clamp(24px, 6vw, 57px);  /*Used clamp instead of media queries because it is solve the problem of needing multiple media queries by having min and max value.*/
+  font-family: 'Marcellus SC', serif;
+  color: #ffffff;
+  z-index: 1; /* overlays the text on top of the image so that the text is visible */
+}
+
+/* Styling the image of figure behind the text overlay and making sure the image right styling of fitting into the content box*/
+.homepage_section > figure > a > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 0;
+  z-index: 0; /* to make the image behind the text */
+  transition: 0.5s; /* transition for smooth animation  of enlarging the image when it is hovered later*/;
+}
+
+/* Styling the image to enlarge the image inside the content box when it is hover over the image. */
+.homepage_section  > figure > a > img:hover {
+  transform: scale(1.3);
+}
+
+
+/* Styling for the whole row section tag that would be reused in multiple webpages, and styling it to make the content to be in flex box so the contents are space out properly and become responsive as well  */
+.the_whole_row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+/* styling for the row content class, making sure the content are properly padded  */
+.row_content {
+  flex-basis: auto; /*to make sure the content of the flex property are distributed properly for spacing*/
+  border-radius: 10px;
+  margin:0;
+  box-sizing: border-box;
+}
+
+/* styling image in row content so that the image fit properly fit into the content box */
+.row_content > img {
+  width: 100%; /* To make the image be responsive with proper width*/
+  max-width: 470px; /*To set max width so the image doesn't overextend than the defined width*/
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 10px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+/* Styling for the caption under the image of row content post  */
+.row_content > .caption {
+  margin-top: 10px;
+  font-size: clamp(14px, 4vw, 20px);  /*Used clamp instead of media queries because it is solve the problem of needing multiple media queries by having min and max value.*/
+  text-align: center;
+  font-family: 'Marcellus SC', sans-serif;
+}
+
+/* styling text and images section to reuse for content that will have paragraph of text and and image for multiple webpages  */
+.text_and_images{
+  display: inline-block;
+  padding: 20px;
+  margin: 20px 20px 20px 30px;
+}
+
+/* Styling the image with the right property to put next to the image and having the float property on the image so the text would wrap around the image if its shrink */
+.text_and_images > img{
+  width: 200px;
+  max-width: 100%;
+  margin-right: 20px;
+  border-radius: 10px;
+  float: left;
+}
+
+/* Styling the title of the paragraph content for asthetic  */
+.text_and_images > .text_box > h2{
+  display: inline-block;
+  margin: 0;
+  font-family: "Marcellus SC", sans-serif;
+  font-size: clamp(14px, 8vw, 32px); /*Used clamp instead of media queries because it is solve the problem of needing multiple media queries by having min and max value.*/
+}
+
+/* Styling the body of the paragraph content for asthetic  */
+.text_and_images > .text_box > p{
+  font-family: "Manjari", sans-serif;
+  font-size: clamp(8px, 5vw, 24px); /*Used clamp instead of media queries because it is solve the problem of needing multiple media queries by having min and max value.*/
+}
+
+
+
+/* THIS PART IS FOR STYLING THE FEATURE EVENT SECTION OF THE EVENT PAGE BASICALLY REUSING THE CODES FROM .homepage_section but did not want to link the image to any navigation links so a separate code is created to keep the same effect without the clickabli */
+
+/* styling for the figure inside the event content of the featured event section */
+.event_section > figure {
+  position: relative;
+  overflow: hidden; /* Styling the figure to hide any content that would overflow the figure container*/
+  border-radius: 20px; /* Rounding off the corners of the content of the figure and image*/
+}
+
+/* Styling for the position and the font size and style of the text overlay over the image in the featured event content of the section  */
+.event_section > figure > .text_overlay {
+  position: absolute;
+  margin: 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: clamp(24px, 6vw, 57px);  /*Used clamp instead of media queries because it is solve the problem of needing multiple media queries by having min and max value.*/
+  font-family: 'Marcellus SC', serif;
+  color: #ffffff;
+  z-index: 1; /* overlays the text on top of the image so that the text is visible */
+}
+
+/* Styling the image of figure behind the text overlay and making sure the image right styling of fitting into the content box*/
+.event_section > figure > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 0;
+  z-index: 0; /* to make the image behind the text */
+  transition: 0.5s; /* transition for smooth animation  of enlarging the image when it is hovered later*/;
+}
+
+/* Styling the image to enlarge the image inside the content box when it is hover over the image. */
+.event_section  > figure > img:hover {
+  transform: scale(1.3);
+}

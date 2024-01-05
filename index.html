@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<!-- Kyaw Nyi Nyi unikey:knyi9181 DECO1016 WEBSITE PROTOTYPE SUBMISSION -->
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Home</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <!-- Creating mandalay logo section class for the homepage button of site -->
+    <section class= "Mandalay_Logo">
+      <figure>
+        <!-- using the <a> tag to link the logo image of the header section to homepage and making it a clickable button  -->
+        <a href="index.html">
+        <img src="Images/weblogo.png" alt="Logo of the website" width="256">
+        </a>
+      </figure>
+    </section>
+
+    <!-- Creating navbar section class to create list of navbar button of site -->
+    <section class= "navbar_below">
+      <!-- list of navigation links are created inside nav tag -->
+      <nav>
+          <ul>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="things_to_do.html">Things to Do</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+      </nav>
+
+    <!-- creating off a section to create a new section to add background image and title of the current page that the user is in  -->
+    </section>
+    <!-- creating figure to insert background image under the navbar section of the site  -->
+    <section class="currentpage_title">
+      <p>Golden Land</p>
+      <figure>
+        <img src="Images/mandalay_palace_moat.jpg" alt="Image of the moat of Mandalay Palace for the home page title">
+      </figure>
+    </section>
+  </header>
+
+  <!-- Main section where the contents of the web pages will be  -->
+  <main>
+     
+    <!-- creating article to insert content body of the website -->
+    <article>
+      
+      <!-- Creating an brief introductory paragraph of the city to inform the user quickly about the city while giving first impression of the city to the user too. -->
+      <section class="intro_paragraph">
+        <p> <hr/>Located in the heart of Myanmar, the city of Mandalay is full of cultural heritage and historical legacy. Also known as the "Golden Land," Mandalay charms its visitors with spectacular golden pagodas, vibrant markets, and the majestic Golden Palace. Immerse yourself in this enchanting city, where every corner tells a story, creating a truly unforgettable experience in the heart of Myanmar's cultural capital.<hr/></p>
+      </section>
+      
+      <!-- creating homepage sections which would be reused for the rest of the content in the homepage, and the buttons will be clickable links to designated webpage and expand the image over the hover.  -->
+
+      <!-- Section for destination section of the homepage content which will be clickable link bringing the user to the destination webpage -->
+       <section class="homepage_section">
+         <p class="title">Destinations</p>
+           <figure>
+             <!-- creating link tag to bring the users to the destination webpage -->
+            <a href="destinations.html">
+               <img src="Images/mandalay_palace.jpg" alt="image of the Mandalay Palace">
+               <p class="text_overlay"> Explore the city</p>
+            </a>
+           </figure>
+       </section>
+
+      <!-- Section for history section of the homepage content which will be a clickable link to bring the user to the history page  -->
+      <section class="homepage_section">
+         <p class="title">History</p>
+           <figure>
+             <!-- creating link tag to bring the users to the history webpage -->
+            <a href="history.html">
+               <img src="Images/Mandalay_Palace_entrance.png" alt="drawing image of a mandalay palace entrance">
+               <p class="text_overlay">Historical journey</p>
+            </a>
+           </figure>
+       </section>
+
+      <!-- Section for things to do section of the homepage content which will be a clickable link to bring the user to the things to do page  -->
+      <section class="homepage_section">
+         <p class="title">Things to do</p>
+           <figure>
+             <!-- creating link tag to bring the users to the things to do webpage -->
+            <a href="things_to_do.html">
+               <img src="Images/puppet-tradition-1024x683.jpg" alt="Image of traditional burmese puppets">
+               <p class="text_overlay">Adventure awaits</p>
+            </a>
+           </figure>
+       </section>
+
+      <!-- Section for things to do section of the homepage content which will be a clickable link to bring the user to the things to do page  -->
+      <section class="homepage_section">
+         <p class="title">Events</p>
+           <figure>
+             <!-- creating link tag to bring the users to the events webpage -->
+            <a href="events.html">
+               <img src="Images/Bagan-Thingyan-for-upload.png" alt="Image of Thingyan Festival">
+               <p class="text_overlay">Joyful celebrations</p>
+            </a>
+           </figure>
+       </section>
+
+    </article>
+  </main>
+  
+</body>
+
+</html>
